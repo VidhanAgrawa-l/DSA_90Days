@@ -2,7 +2,7 @@
 #include <limits.h>
 using namespace std;
 
-//LEET CODE-
+//LEET CODE-231
 
 bool isPowerOfTwo(int n) {
     int power = 1;
@@ -34,3 +34,22 @@ int main() {
 
     return 0;
 }
+
+
+// Approach 5(And Operator)
+
+// And operation between multiple of 2 and next lower number will always give 0 and other wise it will never be 0.
+
+// example 1: 8 & 7
+// 1000(8) & 0111(7) => 0000(0)
+
+// example 1: = 10 & 9
+// 1010(10) & 1001(9) => 1000(8)
+
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        
+        return  (n>0 && (n & (n-1))==0) ? true:false;
+    }
+};
