@@ -22,7 +22,7 @@ int pivotElement(int arr[], int size) {
     return -1;
 }
 
-int main() {
+    int main() {
     int n, element;
     int arr[100];
 
@@ -39,4 +39,4 @@ int main() {
     cout<<"Pivot element of the array : "<<pivot;
 
     return 0;
-}
+    }
